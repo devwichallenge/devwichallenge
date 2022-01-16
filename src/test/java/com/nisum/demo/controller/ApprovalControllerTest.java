@@ -119,7 +119,7 @@ public class ApprovalControllerTest extends TestExtensions {
     @Transactional
     public void userTestErrorPasswordRegex() throws Exception {
         UserInfoDTO userInfoDTO = dataExtensions.getUserDefault();
-        userInfoDTO.setPassword("hunter2");
+        userInfoDTO.setPassword("bossHunter1");
         mockMvc.perform(post(urlTemplate + "/user")
                 .contentType(APPLICATION_JSON_VALUE)
                 .content(json(userInfoDTO)))

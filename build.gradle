@@ -3,11 +3,6 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.8.RELEASE'
     id 'java'
 }
-/*plugins {
-    id 'org.springframework.boot' version '2.2.0.RELEASE'
-    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
-    id 'java'
-}*/
 
 group = 'com.demo'
 version = '0.0.1-SNAPSHOT'
@@ -32,8 +27,8 @@ dependencies {
     implementation group: 'com.auth0', name: 'java-jwt', version: '3.8.3'
     implementation 'org.flywaydb:flyway-core'
     compileOnly 'org.projectlombok:lombok'
-    runtimeOnly 'com.h2database:h2'
     annotationProcessor 'org.projectlombok:lombok'
+    runtimeOnly 'com.h2database:h2'
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
